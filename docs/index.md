@@ -51,7 +51,7 @@ else {
 		int[] countArray = new int[needles.length];
 ```
 
-The following for loop separates the ``haystack`` string into single words using the ``split`` Java method and stores them in a new array of strings called ``words``. 
+The following ``for`` loop separates the ``haystack`` string into single words using the ``split`` Java method and stores them in a new array of strings called ``words``. 
 ```Java
 for (int i = 0; i<needles.length; i++) {
 	String[] words = haystack.split("[ \"\'\t\n\b\f\r]", 0);
@@ -69,7 +69,7 @@ The ``split`` method takes two arguments: a *regular expression* and a *limit*. 
 
 **Note:** To know more about the ``split`` method, visit the [String Class documentation](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#split) and navigate to the **split** section.
 
-The inner **for** loop compares, using the ``compareTo`` Java method, each string of the ``words`` array with the word in the current position of the ``needles`` array. 
+The inner ``for`` loop compares, using the ``compareTo`` Java method, each string of the ``words`` array with the word in the current position of the ``needles`` array. 
 ```Java
 for (int j = 0; j<words.length; j++) {
 		if (words[j].compareTo(needles[i]) == 0) {

@@ -401,7 +401,7 @@
 <pre><code class="language-java">else {
         int[] countArray = new int[needles.length];
 </code></pre>
-<p>The following for loop separates the <code>haystack</code> string into single words using the <code>split</code> Java method and stores them in a new array of strings called <code>words</code>. </p>
+<p>The following <code>for</code> loop separates the <code>haystack</code> string into single words using the <code>split</code> Java method and stores them in a new array of strings called <code>words</code>. </p>
 <pre><code class="language-Java">for (int i = 0; i&lt;needles.length; i++) {
     String[] words = haystack.split(&quot;[ \&quot;\'\t\n\b\f\r]&quot;, 0);
     for (int j = 0; j&lt;words.length; j++) {
@@ -417,7 +417,7 @@
 <li><code>0</code>: The <code>0</code> limit means that splitting will happen as many times as needed.</li>
 </ul>
 <p><strong>Note:</strong> To know more about the <code>split</code> method, visit the <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#split">String Class documentation</a> and navigate to the <strong>split</strong> section.</p>
-<p>The inner <strong>for</strong> loop compares, using the <code>compareTo</code> Java method, each string of the <code>words</code> array with the word in the current position of the <code>needles</code> array. </p>
+<p>The inner <code>for</code> loop compares, using the <code>compareTo</code> Java method, each string of the <code>words</code> array with the word in the current position of the <code>needles</code> array. </p>
 <pre><code class="language-Java">for (int j = 0; j&lt;words.length; j++) {
         if (words[j].compareTo(needles[i]) == 0) {
             countArray[i]++;
