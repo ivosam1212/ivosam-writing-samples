@@ -1,5 +1,5 @@
 # findNeedles Method
-A reference document for a method that finds a set of words inside a text, and it displays how many times it finds a match for each word.
+A reference document for a method that finds a set of words inside a text, and displays how many times it finds a match for each word.
 
 ## Syntax
 
@@ -105,18 +105,18 @@ hallo: 0
 
 If I were to ask the developer about the code, these are the questions I would ask:
 
-* Why is limited to only five words?
-* Can it be implemented in a more general way, for example, use it also for numbers?
+* Why is it limited to only five words?
+* Can it be implemented more generally, for example, use it also for numbers?
 * Is there an easier regular expression to split the text?
 
-If I were to make suggestions, I would start with something possitive and then move to the feedback. Something like this:
+If I were to make suggestions, I would start with something positive and then move to the feedback. Something like this:
 
 Hi, "Developer"
 
 I reviewed the code and documented its reference material. Although I find it easy to understand and well structured, I noticed a couple of ways to improve it.
-Here are my thought:
+Here are my thoughts:
 
-*  Take the ``words`` array declaration outside of the loop. In this way the array will only be created once instead of in every iteration, saving memory.
+*  Take the ``words`` array declaration outside of the loop. In this way, the array will only be created once instead of in every iteration, saving memory.
 * Declare only one counter instead of an array of counters. You can do it before looping and set it back to ``0`` after each *needle* comparison.
 
 Here is how the code would look like with the suggestions:
