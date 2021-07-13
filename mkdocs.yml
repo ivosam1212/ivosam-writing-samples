@@ -1,7 +1,8 @@
 site_name: Google Technical Writing Exercises - Ivo Sam
 nav:
   - Exercise 1 — findNeedles: index.md
-  - Exercise 2 — How to Play Tic-Tac-Toe: exercise2.md
+  - Exercise 2a — Explaining Concepts: exercise2b.md
+  - Exercise 2b — How to Play Tic-Tac-Toe: exercise2.md
 
 theme:
   name: material
