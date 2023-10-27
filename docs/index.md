@@ -1,5 +1,3 @@
-# Test
-
 # findNeedles Method
 A reference document for a method that finds a set of words inside a text, and displays how many times it finds a match for each word.
 
