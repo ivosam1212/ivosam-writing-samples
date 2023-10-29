@@ -1,8 +1,11 @@
 site_name:  Ivo Sam - Writing samples
 nav:
-  - Sample 1 - Method reference: index.md
-  - Exercise 2a — Explaining Concepts: exercise2b.md
-  - Exercise 2b — How to Play Tic-Tac-Toe: exercise2.md
+  - About me: about.md
+  - Sample 1 - Method reference: method-reference.md
+  - Sample 2 - Explaining Concepts: concepts.md
+  - Sample 3 - How to Play Tic-Tac-Toe: instructions.md
+  - Live documentation 1 - Product: pulse.md
+  - Live documentation 2 - SDK: react-sdk.md
 
 theme:
   name: material
