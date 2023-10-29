@@ -1,5 +1,5 @@
-# findNeedles Method
-A reference document for a method that finds a set of words inside a text, and displays how many times it finds a match for each word.
+# Sample 1: Method reference - findNeedles
+This is a reference document for the `findNeedles` method. This method finds a set of words inside a string, and displays how many times finds a match for each word.
 
 ## Syntax
 
@@ -36,7 +36,7 @@ public static void findNeedles(String haystack, String[] needles)
 
 ### Execution Condition
 
-This method only works for a set of a ***maximum*** of *five words*. If the ``needles`` array contains more than five elements, an error message is displayed.
+This method only works for a set of ***maximum*** *five words*. If the `needles` array contains more than five elements, an error message is displayed.
 
 ```java
 if (needles.length > 5) {
@@ -45,7 +45,7 @@ if (needles.length > 5) {
 
 ### Haystack Split and Word Comparison
 
-If the condition allows, the method creates an array to store the count of each of the words in ``needles``.
+If the `needles` array contains five elements or less, creates an array to store the count of each word in `needles`.
 ```java
 else {
 		int[] countArray = new int[needles.length];
@@ -101,42 +101,3 @@ hillo: 1
 hallo: 0
 ```
 
-# Questions and Feedback
-
-If I were to ask the developer about the code, these are the questions I would ask:
-
-* Why is it limited to only five words?
-* Can it be implemented more generally, for example, use it also for numbers?
-* Is there an easier regular expression to split the text?
-
-If I were to make suggestions, I would start with something positive and then move to the feedback. Something like this:
-
-Hi, "Developer"
-
-I reviewed the code and documented its reference material. Although I find it easy to understand and well structured, I noticed a couple of ways to improve it.
-Here are my thoughts:
-
-*  Take the ``words`` array declaration outside of the loop. In this way, the array will only be created once instead of in every iteration, saving memory.
-* Declare only one counter instead of an array of counters. You can do it before looping and set it back to ``0`` after each *needle* comparison.
-
-Here is how the code would look like with the suggestions:
-
-```Java
-public static void findNeedles(String haystack, String[] needles) {
-    if (needles.length > 5) {
-        System.err.println("Too many words!");
-    } else {
-        int count = 0;
-        String[] words = haystack.split("[\"\'\t\n\b\f\r]", 0);
-        for (int i = 0; i < needles.length; i++) {
-            for (int j = 0; j < words.length; j++) {
-                if (words[j].compareTo(needles[i]) == 0) {
-                        count++;
-                }
-            }
-            System.out.println(needles[i] + ": " + count);
-            count = 0;
-        }
-    }
-}
-```

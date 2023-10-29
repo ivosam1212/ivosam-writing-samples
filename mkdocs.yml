@@ -1,6 +1,6 @@
-site_name: Google Technical Writing Exercises - Ivo Sam
+site_name:  Ivo Sam - Writing samples
 nav:
-  - Exercise 1 — findNeedles: index.md
+  - Sample 1 - Method reference: index.md
   - Exercise 2a — Explaining Concepts: exercise2b.md
   - Exercise 2b — How to Play Tic-Tac-Toe: exercise2.md
 

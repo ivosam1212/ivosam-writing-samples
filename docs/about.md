@@ -1,3 +1,1 @@
-# About page
-
-### Wizeline DocOps template
+# About me
